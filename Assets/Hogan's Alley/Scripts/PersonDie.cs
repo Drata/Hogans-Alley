@@ -5,8 +5,8 @@ using UnityEngine;
 public class PersonDie : MonoBehaviour {
 
     float max, min;
-    public float pointsWhenDie;
     public float pointsWhenHit;
+    public float pointsWhenMiss;
 
     private Animator animator;
     private float timeWhenStart;
@@ -23,10 +23,12 @@ public class PersonDie : MonoBehaviour {
 	void Update () {
         if (Time.realtimeSinceStartup > waitTime + timeWhenStart) {
             animator.SetTrigger("EndNow");
+            GameplayManager.GetInstance().points += pointsWhenMiss;
         }
 	}
 
     public void HeColisionado() {
         animator.SetTrigger("EndNow");
+        GameplayManager.GetInstance().points += this.pointsWhenHit;
     }
 }
