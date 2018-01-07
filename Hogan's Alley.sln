@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogan's Alley", "Assembly-CSharp.csproj", "{E1E9AC51-07F8-6E78-F171-D8BD613B6121}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{0F44D2DF-3E41-959E-EFF6-EFF35CD19155}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,13 +11,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E1E9AC51-07F8-6E78-F171-D8BD613B6121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1E9AC51-07F8-6E78-F171-D8BD613B6121}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1E9AC51-07F8-6E78-F171-D8BD613B6121}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1E9AC51-07F8-6E78-F171-D8BD613B6121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F44D2DF-3E41-959E-EFF6-EFF35CD19155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F44D2DF-3E41-959E-EFF6-EFF35CD19155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F44D2DF-3E41-959E-EFF6-EFF35CD19155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F44D2DF-3E41-959E-EFF6-EFF35CD19155}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB96F4BA-6F9B-42D0-A6E4-EAAD3FC13FCC}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj

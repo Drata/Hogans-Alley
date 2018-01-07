@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4880645650033676}
   - component: {fileID: 95966200859285970}
-  - component: {fileID: 114981746788013278}
+  - component: {fileID: 114235288242878488}
   m_Layer: 0
   m_Name: Bad01
   m_TagString: Untagged
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 33384392833406580}
   - component: {fileID: 23542420363566952}
   - component: {fileID: 65239435166784342}
-  - component: {fileID: 114710213052383452}
+  - component: {fileID: 114634810064835770}
   m_Layer: 0
   m_Name: Person
   m_TagString: Untagged
@@ -144,19 +144,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114710213052383452
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1643702123012654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de9f1e0c7df2f343a8fce2761f47e20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  personScript: {fileID: 114981746788013278}
---- !u!114 &114981746788013278
+--- !u!114 &114235288242878488
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -164,8 +152,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1233870491979538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aff413a97009dd4a85e1e8287d7ddca, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c16118172df534ebcb61e98b350ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointsWhenHit: 100
   pointsWhenMiss: -100
+--- !u!114 &114634810064835770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643702123012654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ede5f72f9cd9e847abd43d5997e14f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personScript: {fileID: 114235288242878488}

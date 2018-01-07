@@ -6,25 +6,31 @@ using UnityEngine.XR;
 public class CameraController : MonoBehaviour {
 
     private Vector3 lastMouse = new Vector3(255, 255, 255);
-    public GameObject bullet;
+    private LineRenderer lr;
+    //public GameObject bullet;
+    private AudioSource audioSource;
+    public AudioClip audioClipShoot;
     public float cameraSens = 0.50f;
-    public float impulse = 10f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (!XRSettings.enabled) {
-            CameraMovement();
-        }
+    //public float impulse = 10f;
 
-        if (Input.GetButtonDown("Fire1")) {
+    // Use this for initialization
+    void Start () {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update () {
+
+        if (Input.GetButtonDown("Fire1"))
+        {
             Shoot();
         }
-	}
+
+        if (!XRSettings.enabled) {
+            CameraMovement();
+	    }
+    }
 
     void CameraMovement() {
         lastMouse = Input.mousePosition - lastMouse;
@@ -35,9 +41,28 @@ public class CameraController : MonoBehaviour {
     }
 
     void Shoot() {
+        /**
         GameObject cloneBullet = Instantiate(bullet, transform.position, transform.rotation);
         BulletHandler script = cloneBullet.GetComponent<BulletHandler>();
         script.Shoot(transform.forward * impulse);
-        Destroy(cloneBullet, 3f);
+        Destroy(cloneBullet, 3f); **/
+
+        audioSource.PlayOneShot(audioClipShoot);
+
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit))
+        {
+
+            if (hit.collider != null)
+            {
+                // Find the hit reciver (if existant) and call the method
+                var hitReciver = hit.collider.gameObject.GetComponent<HitReciver>();
+                if (hitReciver != null)
+                {
+                    hitReciver.OnRayHit();
+                }
+            }
+        }
+
     }
 }

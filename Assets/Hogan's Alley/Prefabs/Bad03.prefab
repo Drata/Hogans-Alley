@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4914334141780910}
   - component: {fileID: 95761276100453142}
-  - component: {fileID: 114502718800797016}
+  - component: {fileID: 114866324404296250}
   m_Layer: 0
   m_Name: Bad03
   m_TagString: Untagged
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 33164454388828958}
   - component: {fileID: 23918452182918872}
   - component: {fileID: 65164507129435618}
-  - component: {fileID: 114425570894483150}
+  - component: {fileID: 114060598487924238}
   m_Layer: 0
   m_Name: Person
   m_TagString: Untagged
@@ -144,7 +144,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114425570894483150
+--- !u!114 &114060598487924238
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -152,11 +152,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1395924757516776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de9f1e0c7df2f343a8fce2761f47e20, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ede5f72f9cd9e847abd43d5997e14f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personScript: {fileID: 114502718800797016}
---- !u!114 &114502718800797016
+  personScript: {fileID: 114866324404296250}
+--- !u!114 &114866324404296250
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1368206170907464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aff413a97009dd4a85e1e8287d7ddca, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c16118172df534ebcb61e98b350ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointsWhenHit: 100

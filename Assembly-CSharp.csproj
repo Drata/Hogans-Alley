@@ -51,12 +51,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DestroyScript.cs" />
      <Compile Include="Assets\Hogan&apos;s Alley\Scripts\BulletHandler.cs" />
      <Compile Include="Assets\Hogan&apos;s Alley\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Hogan&apos;s Alley\Scripts\DestroyScript.cs" />
      <Compile Include="Assets\Hogan&apos;s Alley\Scripts\GameplayManager.cs" />
+     <Compile Include="Assets\Hogan&apos;s Alley\Scripts\HitReciver.cs" />
      <Compile Include="Assets\Hogan&apos;s Alley\Scripts\PersonDie.cs" />
      <Compile Include="Assets\Hogan&apos;s Alley\Scripts\PersonHijo.cs" />
+     <Compile Include="Assets\Hogan&apos;s Alley\Scripts\Spawn.cs" />
      <Compile Include="Assets\Hogan&apos;s Alley\Scripts\SpawnManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

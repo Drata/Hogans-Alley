@@ -10,5 +10,11 @@ public class PersonHijo : MonoBehaviour {
         if (other.gameObject.name == "Bullet(Clone)") {
             personScript.HeColisionado();
         }
+        else
+        {
+            Debug.Log(other.gameObject.name);
+        }
     }
+
+
 }

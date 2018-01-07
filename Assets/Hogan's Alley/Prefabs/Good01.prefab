@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33774338267121192}
   - component: {fileID: 23569964497640870}
   - component: {fileID: 65619948029914432}
-  - component: {fileID: 114970387652440634}
+  - component: {fileID: 114177683246645518}
   m_Layer: 0
   m_Name: Person
   m_TagString: Untagged
@@ -39,7 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4524315958971644}
   - component: {fileID: 95932802556514952}
-  - component: {fileID: 114768316664182344}
+  - component: {fileID: 114492461617655116}
   m_Layer: 0
   m_Name: Good01
   m_TagString: Untagged
@@ -144,20 +144,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114768316664182344
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1270651406016118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aff413a97009dd4a85e1e8287d7ddca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointsWhenHit: -200
-  pointsWhenMiss: 0
---- !u!114 &114970387652440634
+--- !u!114 &114177683246645518
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -165,7 +152,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1206816643683036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de9f1e0c7df2f343a8fce2761f47e20, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ede5f72f9cd9e847abd43d5997e14f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personScript: {fileID: 114768316664182344}
+  personScript: {fileID: 114492461617655116}
+--- !u!114 &114492461617655116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1270651406016118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c16118172df534ebcb61e98b350ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsWhenHit: -200
+  pointsWhenMiss: 0
