@@ -5,14 +5,21 @@ using UnityEngine.XR;
 
 public class CameraController : MonoBehaviour {
 
-    private Vector3 lastMouse = new Vector3(255, 255, 255);
-    private LineRenderer lr;
-    //public GameObject bullet;
     private AudioSource audioSource;
     public AudioClip audioClipShoot;
     public float cameraSens = 0.50f;
 
-    //public float impulse = 10f;
+    private SteamVR_TrackedObject trackedObject;
+
+    private SteamVR_Controller.Device Controller
+    {
+        get { return SteamVR_Controller.Input((int)trackedObject.index); }
+    }
+
+    private void Awake()
+    {
+        trackedObject = GetComponent<SteamVR_TrackedObject>();
+    }
 
     // Use this for initialization
     void Start () {
@@ -22,30 +29,14 @@ public class CameraController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Controller.GetHairTriggerDown())
         {
             Shoot();
         }
 
-        if (!XRSettings.enabled) {
-            CameraMovement();
-	    }
-    }
-
-    void CameraMovement() {
-        lastMouse = Input.mousePosition - lastMouse;
-        lastMouse = new Vector3(-lastMouse.y * cameraSens, lastMouse.x * cameraSens, 0);
-        lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
-        transform.eulerAngles = lastMouse;
-        lastMouse = Input.mousePosition;
     }
 
     void Shoot() {
-        /**
-        GameObject cloneBullet = Instantiate(bullet, transform.position, transform.rotation);
-        BulletHandler script = cloneBullet.GetComponent<BulletHandler>();
-        script.Shoot(transform.forward * impulse);
-        Destroy(cloneBullet, 3f); **/
 
         audioSource.PlayOneShot(audioClipShoot);
 

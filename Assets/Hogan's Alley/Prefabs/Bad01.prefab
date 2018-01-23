@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsWhenHit: 100
-  pointsWhenMiss: -100
+  pointsWhenMiss: 0
 --- !u!114 &114634810064835770
 MonoBehaviour:
   m_ObjectHideFlags: 1

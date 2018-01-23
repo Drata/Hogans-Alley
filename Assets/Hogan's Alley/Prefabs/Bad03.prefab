@@ -168,4 +168,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsWhenHit: 100
-  pointsWhenMiss: -100
+  pointsWhenMiss: 0
